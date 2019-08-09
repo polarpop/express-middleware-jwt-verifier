@@ -120,8 +120,7 @@ in the constructor.
 ### jwtVerifier.verifyAccessToken(req, res, next) ⇒ <code>express~Next</code> \| <code>void</code>
 Verifies the request authorization header is a JWT token and is actually a valid OKTA JWT token. If there is no 
 OktaJwtVerifier instance created, it will return a HTTP status of 400.
-
-**Kind**: instance method of [<code>JwtVerifier</code>](#JwtVerifier)  
+  
 
 | Param | Type | Description |
 | --- | --- | --- |

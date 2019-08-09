@@ -4,7 +4,7 @@ Node.js Express Middleware to verify OKTA jwt tokens
 ## Modules
 
 <dl>
-<dt><a href="#module_{jwtVerifier}">{jwtVerifier}</a> ⇒ <code>JwtVerifier~verifyAccessToken</code></dt>
+<dt><a href="#module_{jwtVerifier}">jwtVerifier</a> ⇒ <code>JwtVerifier~verifyAccessToken</code></dt>
 <dd><p>A wrapper function for the JwtVerifier class. In most cases this will be used
 as the middleware function, but if you need more flexibility see
 the JwtVerifier class docs, and you can import just the class.</p>
@@ -27,7 +27,7 @@ the JwtVerifier class docs, and you can import just the class.</p>
 
 <a name="module_{jwtVerifier}">jwtVerifier</a>
 
-## {jwtVerifier} ⇒ <code>JwtVerifier.verifyAccessToken</code>
+## jwtVerifier ⇒ <code>JwtVerifier.verifyAccessToken</code>
 A wrapper function for the JwtVerifier class. In most cases this will be used
 as the middleware function, but if you need more flexibility see
 the JwtVerifier class docs, and you can import just the class.

@@ -4,7 +4,7 @@ Node.js Express Middleware to verify OKTA jwt tokens
 ## Modules
 
 <dl>
-<dt><a href="#module_{function}">{function}</a> ⇒ <code>JwtVerifier~verifyAccessToken</code></dt>
+<dt><a href="#module_{jwtVerifier}">{jwtVerifier}</a> ⇒ <code>JwtVerifier~verifyAccessToken</code></dt>
 <dd><p>A wrapper function for the JwtVerifier class. In most cases this will be used
 as the middleware function, but if you need more flexibility see
 the JwtVerifier class docs, and you can import just the class.</p>
@@ -25,14 +25,14 @@ the JwtVerifier class docs, and you can import just the class.</p>
 <dd></dd>
 </dl>
 
-<a name="module_{function}"></a>
+<a name="module_{jwtVerifier}">jwtVerifier</a>
 
-## {function} ⇒ <code>JwtVerifier~verifyAccessToken</code>
+## {jwtVerifier} ⇒ <code>JwtVerifier.verifyAccessToken</code>
 A wrapper function for the JwtVerifier class. In most cases this will be used
 as the middleware function, but if you need more flexibility see
 the JwtVerifier class docs, and you can import just the class.
 
-**Returns**: <code>JwtVerifier~verifyAccessToken</code> - The verifyAccessToken middleware method.  
+**Returns**: <code>JwtVerifier.verifyAccessToken</code> - The verifyAccessToken middleware method.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -65,7 +65,6 @@ module.exports = app;
 <a name="JwtVerifier"></a>
 
 ## JwtVerifier
-**Kind**: global class  
 
 * [JwtVerifier](#JwtVerifier)
     * [new JwtVerifier(options)](#new_JwtVerifier_new)
@@ -114,8 +113,7 @@ module.exports = app;
 ### jwtVerifier.createJwtVerifier() ⇒ <code>OktaJwtVerifier</code>
 Creates a new OktaJwtVerifier instance. This will utilize the options that are 
 in the constructor.
-
-**Kind**: instance method of [<code>JwtVerifier</code>](#JwtVerifier)  
+ 
 **Returns**: <code>OktaJwtVerifier</code> - The OktaJwtVerifier used for verifying access tokens. See https://github.com/okta/okta-oidc-js/tree/master/packages/jwt-verifier for further details.  
 <a name="JwtVerifier+verifyAccessToken"></a>
 
@@ -134,7 +132,6 @@ OktaJwtVerifier instance created, it will return a HTTP status of 400.
 <a name="JwtVerifier"></a>
 
 ## JwtVerifier
-**Kind**: global variable  
 
 * [JwtVerifier](#JwtVerifier)
     * [new JwtVerifier(options)](#new_JwtVerifier_new)
@@ -184,7 +181,6 @@ module.exports = app;
 Creates a new OktaJwtVerifier instance. This will utilize the options that are 
 in the constructor.
 
-**Kind**: instance method of [<code>JwtVerifier</code>](#JwtVerifier)  
 **Returns**: <code>OktaJwtVerifier</code> - The OktaJwtVerifier used for verifying access tokens. See https://github.com/okta/okta-oidc-js/tree/master/packages/jwt-verifier for further details.  
 <a name="JwtVerifier+verifyAccessToken"></a>
 
@@ -192,7 +188,6 @@ in the constructor.
 Verifies the request authorization header is a JWT token and is actually a valid OKTA JWT token. If there is no 
 OktaJwtVerifier instance created, it will return a HTTP status of 400.
 
-**Kind**: instance method of [<code>JwtVerifier</code>](#JwtVerifier)  
 
 | Param | Type | Description |
 | --- | --- | --- |

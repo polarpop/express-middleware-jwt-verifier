@@ -118,7 +118,7 @@ class JwtVerifier {
       if (accessToken) {
         this.okta.verifyAccessToken(accessToken)
           .then(jwt => {
-            req.user = { token: jwt, isAuthenticated: true };
+            req.jwt = { token: jwt, isAuthenticated: true };
             next();
           })
           .catch(err => {
@@ -144,7 +144,7 @@ exports.JwtVerifier = JwtVerifier;
 * as the middleware function, but if you need more flexibility see
 * the JwtVerifier class docs, and you can import just the class.
 *
-* @exports {function}
+* @exports {jwtVeriifer}
 *
 * @param {Object} options The options needed to verify your JWT token in the express middleware. *Note:* only the `issuer` property is required.
 * @param {string} options.issuer The issuer url that the JWT token was generated from, something like `https://{yourOktaDomain}/oauth2/default`.

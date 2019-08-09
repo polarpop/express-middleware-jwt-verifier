@@ -1,0 +1,36 @@
+{
+  "name": "@movement-mortgage/middleware-okta-jwt",
+  "description": "Node.js implementation for Express.js and Okta jwt-verifier middleware",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc2md index.js > api.md"
+  },
+  "engines": {
+    "node": ">=8.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/polarpop/express-middleware-okta-jwt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/polarpop/express-middleware-okta-jwt/issues"
+  },
+  "homepage": "https://github.com/polarpop/express-middleware-okta-jwt",
+  "dependencies": {
+    "@okta/configuration-validation": "^0.3.0",
+    "@okta/jwt-verifier": "^1.0.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "express",
+    "middleware",
+    "okta",
+    "jwt"
+  ],
+  "author": "polarpop"
+}
